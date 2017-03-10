@@ -9,8 +9,8 @@ module.exports = function(app, db) {
       logs.forEach((log) => {
         logsArray.push(log)
       })
-      // return array of log objects as response
-      res.send(logsArray)
+      // return array of log objects as JSON response
+      res.json(logsArray)
     })
   })
 
